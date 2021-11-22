@@ -58,6 +58,7 @@ const NavStyled = styled.nav`
                 display: block;
                 padding: .4rem 0;
                 position: relative;
+                text-transform: uppercase;
                 &:hover {
                     cursor: pointer;
                 }

@@ -18,15 +18,19 @@ const PrimaryButtonStyled = styled.a`
     position: relative;
     cursor: pointer;
     transition: all .4s ease;
-    &:hover::after {
+    &::after {
         content: '';
         position: absolute;
-        width: 100%;
+        width: 0;
         height: .2rem;
         background-color: var(--white-color);
         left: 0;
         bottom: 0;
-        transition: all .4s ease;
+        transition: all .4s ease-in-out;
+        opacity: .7;
+    }
+    &:hover::after {
+        width: 100%;
     }
 `;
 
