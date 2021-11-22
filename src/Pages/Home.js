@@ -7,6 +7,12 @@ import MyParticle from '../Components/MyParticle';
 const Home = () => {
     return (
         <HomeStyled>
+            <div className="lines">
+                <div className="line-1"></div>
+                <div className="line-2"></div>
+                <div className="line-3"></div>
+                <div className="line-4"></div>
+            </div>
             <div className="particle-con">
                 <MyParticle></MyParticle>
             </div>
@@ -33,6 +39,18 @@ const HomeStyled = styled.header`
     width: 100%;
     height: 100vh;
     position: relative;
+    .lines {
+        position: absolute;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: space-evenly;
+        .line-1, .line-2, .line-3, .line-4 {
+        width: 1px;
+        min-height: 100vh;
+        background-color: var(--border-color);
+        }
+    }
     .my-particles-js {
         width: 100%;
         height: 100vh;
