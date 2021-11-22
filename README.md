@@ -2,9 +2,6 @@
 
 My project live link [salek's portfolio](https://github.com/facebook/create-react-app).
 
-## Available Scripts
-
-In the project directory, you can run:
 
 ### Tools for this project
 
@@ -15,3 +12,6 @@ In the project directory, you can run:
 * React Router Dom
 * Metarial UI
 
+## Description:
+
+I have installed an extension of BS code for suggesion style.
