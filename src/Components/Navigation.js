@@ -10,16 +10,16 @@ const Navigation = () => {
             </div>
             <ul className="nav-items">
                 <li className="nav-item">
-                    <NavLink to="/home" activeClassName="active-class">Home</NavLink>
-                    <NavLink to="/about" activeClassName="active-class">About</NavLink>
-                    <NavLink to="/resume" activeClassName="active-class">Resume</NavLink>
-                    <NavLink to="/portfolios" activeClassName="active-class">Portfolios</NavLink>
-                    <NavLink to="/blogs" activeClassName="active-class">Blogs</NavLink>
-                    <NavLink to="/contact" activeClassName="active-class">Contact</NavLink>
+                    <NavLink to="/" exact activeClassName="active-class">Home</NavLink>
+                    <NavLink to="/about" exact activeClassName="active-class">About</NavLink>
+                    <NavLink to="/resume" exact activeClassName="active-class">Resume</NavLink>
+                    <NavLink to="/portfolios" exact activeClassName="active-class">Portfolios</NavLink>
+                    <NavLink to="/blogs" exact activeClassName="active-class">Blogs</NavLink>
+                    <NavLink to="/contact" exact activeClassName="active-class">Contact</NavLink>
                 </li>
             </ul>
             <footer className="footer">
-                <p>&copy; 2022 Salek's Portfolio</p>
+                <p>&copy; 2022 Salek Mia</p>
             </footer>
         </NavStyled>
     );
@@ -56,7 +56,7 @@ const NavStyled = styled.nav`
             display: block;
             a {
                 display: block;
-                padding: .2rem 0;
+                padding: .4rem 0;
                 position: relative;
                 &:hover {
                     cursor: pointer;
@@ -86,7 +86,7 @@ const NavStyled = styled.nav`
         border-top: 2px solid var(--border-color);
         padding: 1rem 0;
         p {
-            font-size: 1rem;
+            font-size: .8rem;
         }
     }
 
